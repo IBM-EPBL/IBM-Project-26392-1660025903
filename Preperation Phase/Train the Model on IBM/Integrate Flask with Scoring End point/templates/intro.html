@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Wind Energy Prediction</title>
+    <style>
+      body {
+        background-image: url("https://media.wired.com/photos/63227cb600704d14b5ffb891/master/pass/windturbines_Science_GettyImages-1203659530.jpg");
+        background-size: cover;
+      }
+      .header {
+        top: 0px;
+        margin: 0px;
+        left: 0px;
+        right: 0px;
+        position: fixed;
+        background: green;
+        color: white;
+        overflow: hidden;
+        padding-bottom: 30px;
+        font-size: 2.25vw;
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        padding-top: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .second {
+        padding: 0px;
+        width: 80%;
+        margin-top: 200px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+      }
+      font .inside {
+        padding-left: 40px;
+        padding-top: 8%;
+        padding-right: 40px;
+        background-color: #f2d19a;
+        font-family: Georgia, serif;
+        font-size: 20px;
+        text-align: justify;
+      }
+      .myButton {
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        color: #fff;
+        font-weight: 700;
+        font-size: 12px;
+        background-color: green;
+        padding: 10px 15px;
+        margin: 0 auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      Predicing The Energy Output Of Wind Turbine Based On Weather Condition
+    </div>
+    <center>
+      <div class="second">
+        <div class="inside">
+          Renewable energy, such as wind and solar energy, plays an increasing
+          role in the supply of energy worldwide. This trend will continue
+          because global energy demand is increasing, and the use of nuclear
+          power and traditional sources of energy such as coal and oil is unsafe
+          and leads to a large amount of CO2 emission. Wind energy is a key
+          player in the field of renewable energy. In Europe, the capacity of
+          wind energy production has doubled from 2009 to 2010. <br /><br />
+          However, levels of production of wind energy are hard to predict as
+          they rely on potentially unstable weather conditions present at the
+          wind farm. In particular, wind speed is crucial for energy production
+          based on wind, and it may vary drastically over time. Energy suppliers
+          are interested in accurate predictions, as they can avoid
+          overproduction by coordinating the collaborative production of
+          traditional power plants and weather-dependent energy sources. The
+          energy can be predicted based on the power curve and the windspeed.
+          <br /><br /><br />
+          <a href="{{url_for('predict')}}"
+            ><button type="button" class="myButton">
+              Want to predict the energy??
+            </button></a
+          >
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
